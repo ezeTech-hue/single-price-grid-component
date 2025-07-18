@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.community {
+    background-color: white;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 4.5em;
+    padding-bottom: 2.5em;
+    grid-column: span 2;
+}
+
+.community hgroup h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.community hgroup h3 {
+    margin-top: 10px;
+    color: hsl(71, 73%, 54%);   
+}
+
+.community hgroup p {
+    margin-top: 8px;
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.subscription h3 {
+    color: white;
+    margin-left: -3.25rem;
+}
+
+.subscription .amount {
+    margin-top: 1rem;
+    display: flex;
+    gap: 14px;
+}
+
+.subscription .amount h1 {
+    color: white;
+}
+
+.subscription .amount p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: hsl(216, 43%, 86%);
+}
+
+.subscription p {
+    margin-left: -6px;
+    margin-top: 1rem;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+.subscription button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(180, 100%, 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.subscription button:hover {
+    background-color: hsl(71, 89%, 31%);
+    transition: all 1s;
+}
+
+.subscription button:active {
+    background-color: hsl(71, 89%, 31%);
+    transition: all 1s;
+}
+
+.reasons {
+    background-color: hsl(179, 62%, 61%);;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.reasons h3 {
+    color: white;
+}
+
+.reasons .features {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 15px;
+    color: hsl(204, 43%, 93%);
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.community {
+    background-color: white;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+}
+
+.community hgroup h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.community hgroup h3 {
+    margin-top: 10px;
+    color: hsl(71, 73%, 54%);   
+}
+
+.community hgroup p {
+    margin-top: 10px;
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+}
+
+.subscription h3 {
+    color: white;
+}
+
+.subscription .amount {
+    margin-top: 1rem;
+    display: flex;
+    gap: 14px;
+}
+
+.subscription .amount h1 {
+    color: white;
+}
+
+.subscription .amount p {
+    margin-top: 12px;
+    font-size: 12px;
+    color: hsl(216, 43%, 86%);
+}
+
+.subscription p {
+    margin-top: 3px;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+.subscription button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(180, 100%, 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 2rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.subscription button:hover {
+    background-color: hsl(71, 89%, 31%);
+    transition: all 1s;
+}
+
+.subscription button:active {
+    background-color: hsl(71, 89%, 31%);
+    transition: all 1s;
+}
+
+.reasons {
+    background-color: hsl(179, 62%, 61%);;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.reasons h3 {
+    color: white;
+}
+
+.reasons .features {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 16px;
+    color: hsl(204, 43%, 93%);
+}
+
+}
+
+
+
+@media screen and (max-width: 342px) {
+    .subscription button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(180, 100%, 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 2rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+}
+
+@media screen and (max-width: 333px) {
+    .subscription p {
+    margin-top: 3px;
+    color: hsl(204, 43%, 93%);
+    font-size: 15px;
+}
+
+}
