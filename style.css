@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 641px) {
 
 body {
     font-family: "Karla", sans-serif;
@@ -136,7 +136,7 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 640px) {
     body {
     font-family: "Karla", sans-serif;
     background-color: hsl(204, 43%, 93%);
